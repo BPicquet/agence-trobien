@@ -1,0 +1,492 @@
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 1500px;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+/* Section: header */
+.header{
+    height: 100vh;
+}
+
+.header__container-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container-logo > img{
+    width: 150px;
+    height: 100px;
+}
+
+.header__container-homepage{
+    display: flex;
+}
+
+.header__container-homepage > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.header__container-homepage > div:nth-child(1) > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__container-homepage > div:nth-child(1) > img{
+    visibility: hidden;
+}
+
+.header__container-homepage > div:nth-child(1) p{
+    transform: rotate(-90deg);
+    font-size: 15px;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #FF0068;
+}
+
+.header__container-homepage > div:nth-child(1) img{
+    margin: 5px;
+    width: 20px;
+}
+
+.hero-banner{
+    height: calc(100vh - 100px);
+    width: calc(100% - 120px);
+    background-image: url("./images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* our-agency */
+
+.our-agency__first-container, .our-agency__second-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 150px 0;
+}
+
+.our-agency__first-container > img, .our-agency__second-container > img{
+    width: 500px;
+}
+
+.our-agency__first-container > div, .our-agency__second-container > div{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.our-agency__second-container > div{
+    align-items: flex-end;
+}
+
+.our-agency__first-container > div h2, .our-agency__second-container > div h2{
+    font-size: 40px;
+    color: #FF0068;
+    font-weight: 200;
+}
+
+.our-agency__second-container > div h2{
+    text-align: right;
+}
+
+.our-agency__first-container > div p, .our-agency__second-container > div p{
+    font-size: 16px;
+    color: rgb(46, 46, 46);
+    font-weight: 200;
+}
+
+.our-agency__second-container > div p{
+    text-align: right;
+}
+
+.our-agency__first-container > div button, .our-agency__second-container> div button{
+    background-color: #FF0068;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 6px 15px;
+}
+/* Persuade */
+.persuade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.persuade h2{
+    color: #FF0068;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.persuade img{
+    width: 30px;
+    margin-top: 205px;
+    margin-right: 10px;
+}
+
+.persuade > div{
+    display: flex;
+    align-items: flex-start;
+}
+
+.persuade > div > p{
+    color: #FF0068;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.persuade__form{
+    position: relative;
+}
+
+.persuade__form > div:nth-child(1), .persuade__form > div:nth-child(3){
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #FF0068;
+    left: -4px;
+}
+
+.persuade__form > div:nth-child(1){
+    top: 0px;
+}
+
+.persuade__form > div:nth-child(2){
+    bottom: 0;
+}
+
+.persuade__form > div:nth-child(2){
+    height: 200px;
+    width: 2px;
+    background-color: #FF0068;
+}
+
+/* Projects*/
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.project > h2{
+    font-size: 40px;
+    color: #FF0068;
+    font-weight: 200;
+    margin-bottom: 2px;
+}
+
+.project p{
+    font-size: 16px;
+    color: rgb(46, 46, 46);
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.project__container-skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project__container-skills > div{
+    width: 326px;
+    height: 450px;
+    margin: 0 20px;
+    background-size: cover;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.project__container-skills > div:nth-child(1){
+    background-image: url("./images/astronaut-1390007_1920.jpg");
+    background-position: center;
+}
+.project__container-skills > div:nth-child(2){
+    background-image: url("./images/technology-785742_1920.jpg");
+    background-position: 50%;
+}
+.project__container-skills > div:nth-child(3){
+    background-image: url("./images/woman-2435605_1920.jpg");
+    background-position: 15%;
+}
+
+.project__container-skills > div span{ 
+    position: absolute;
+}
+
+.project__container-skills > div span:nth-child(1){
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+    text-align: right;
+    top: 135px;
+    left: 20px;
+}
+
+.project__container-skills > div span:nth-child(2){
+    font-size: 12px;
+    bottom: 15px;
+    left: 15px;
+}
+
+.project__container-skills > div:nth-child(1) span:nth-child(1){
+    top: 85px;
+    left: 60px;
+}
+.project__container-skills > div:nth-child(3) span:nth-child(1){
+    top: 115px;
+    left: 40px;
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.contact__social{
+    margin-top: 20px;
+}
+
+.contact__social p{
+    color: #FF0068;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.contact__social > div{
+    display: flex;
+    align-items: center;
+}
+
+.contact img{
+    width: 15px;
+}
+
+.contact-rond{
+    width: 6px;
+    height: 6px;
+    background-color:#FF0068;
+    border-radius: 50%;
+}
+
+form > div{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+form > div > div{
+    color:#FF0068;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+form input{
+    border: none;
+    border-bottom: 1px solid #FF0068;
+    height: 25px;
+    width: 170px;
+}
+
+.contact__textarea{
+    margin: 15px;
+    color:#FF0068;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+form textarea{
+    border: none;
+    border-bottom: 1px solid #FF0068;
+}
+
+.contact__form > form > div:nth-child(5){
+    display: flex;
+    justify-content: space-around;
+    margin-left: 190px;
+}
+
+.contact__form button{
+    padding: 7px 15px;
+    border: none;
+    color: white;
+    background-color:#FF0068;
+}
+
+/* Footer */
+.footer{
+    background-color:#FF0068;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > img{
+    width: 300px;
+}
+
+/* Responsive mode */
+@media screen and (max-width: 1200px) {
+    /* Header section */
+    .hero-banner{
+        background-position: 85% 50%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    /* Our agency section */
+    .our-agency__first-container, .our-agency__second-container{
+        flex-direction: column;
+    }
+    .our-agency__first-container > div{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /* Project section */
+    .project__container-skills{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Contact section */
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__social{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Header section */
+    .header__container-homepage{
+        flex-direction: column-reverse;
+    }
+    .hero-banner{
+        width: 100%;
+        height: calc(100vh - 170px);
+    }
+    .header__container-homepage > div:nth-child(1){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .header__container-homepage > div:nth-child(1) > div{
+        flex-direction: row;
+    }
+    .header__container-homepage > div:nth-child(1) p{
+        transform: rotate(0deg);
+        font-size: 15px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Our agency section */
+    .our-agency__first-container > img, .our-agency__second-container > img{
+        width: 400px;
+    }
+    .our-agency__first-container > div, .our-agency__second-container > div{
+        width: 400px;
+    }
+    .our-agency__first-container, .our-agency__second-container{
+        margin: 50px 0;
+    }
+    /* Persuade section */
+    .persuade h2{
+        font-size: 20px;
+    }
+    .persuade img{
+        width: 20px;
+    }
+    /* Footer section */
+    .footer{
+        height: 150px;
+    }
+    .footer > img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Our agency section */
+    .our-agency__first-container > img, .our-agency__second-container > img{
+        width: 350px;
+    }
+    .our-agency__first-container > div, .our-agency__second-container > div{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Our agency section */
+    .our-agency__first-container > img, .our-agency__second-container > img{
+        width: 300px;
+    }
+    .our-agency__first-container > div, .our-agency__second-container > div{
+        width: 300px;
+    }
+    .our-agency__first-container > div > h2, .our-agency__second-container > div > h2{
+        font-size: 30px;
+    }
+    /* Project section */
+    .project h2{
+        font-size: 30px;
+    }
+    .project p{
+        margin: 10px 25px 30px 25px;
+    }
+    /* Persuade section */
+    .persuade p{
+        font-size: 13px;
+    }
+    .persuade img{
+        width: 20px;
+    }
+    /* Contact section */
+    form input{
+        width: 120px;
+    }
+    .contact__form > form > div:nth-child(5){
+        margin-left: 120px;
+    }
+}
+
