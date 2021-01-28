@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Agence Trobien</title>
 </head>
 <body>
@@ -26,8 +27,8 @@
     </section>
 
     <section class="our-agency">
-        <div class="our-agency__first-container">
-            <div>
+        <div  class="our-agency__first-container">
+            <div data-aos="fade-right">
                 <h2>L'internet c'est pas simple mais c'est fun aussi !</h2>
                 <p>
                     Vous avez envie d'avoir un site pour vendre vos bidules ?
@@ -45,7 +46,7 @@
         </div>
         <div class="our-agency__second-container">
             <img src="./images/lights.png" alt="">
-            <div>
+            <div data-aos="fade-left">
                 <h2>Franchement... faites-nous confiance... ça ira bien !</h2>
                 <p>
                     Parce qu'il y a plein de gens... qui se la racontent mais
@@ -82,8 +83,8 @@
     </section>
 
     <section class="persuade">
-        <div>
-            <div class="persuade__form">
+        <div data-aos="fade-right">
+            <div class="persuade__form" >
                 <div></div>
                 <div></div>
                 <div></div>
@@ -97,7 +98,7 @@
     </section>
 
     <section class="contact">
-        <div class="contact__social">
+        <div class="contact__social" data-aos="fade-right">
             <div>
                 <img src="./icones/location.svg" alt="">
                 <p>16 rue de l'université - 62300 Lens</p>
@@ -166,5 +167,8 @@
     </section>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+    </script>
 </body>
 </html>

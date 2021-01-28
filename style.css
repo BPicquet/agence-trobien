@@ -4,6 +4,8 @@ body{
     max-width: 1500px;
     height: 100%;
     font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Section: header */
