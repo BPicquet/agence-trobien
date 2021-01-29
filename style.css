@@ -68,6 +68,17 @@ body{
     background-image: url("./images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.hero-banner > p{
+    font-size: 60px;
+    font-weight: 600;
+    width: 500px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 10%;
 }
 
 /* our-agency */
@@ -121,6 +132,7 @@ body{
     font-size: 16px;
     margin-top: 20px;
     padding: 6px 15px;
+    cursor: pointer;
 }
 /* Persuade */
 .persuade{
@@ -214,23 +226,36 @@ body{
     width: 326px;
     height: 450px;
     margin: 0 20px;
-    background-size: cover;
     color: white;
     text-transform: uppercase;
     position: relative;
+    transition: background-size 0.5s;
 }
 
 .project__container-skills > div:nth-child(1){
     background-image: url("./images/astronaut-1390007_1920.jpg");
     background-position: center;
+    background-size: 500px;
 }
 .project__container-skills > div:nth-child(2){
     background-image: url("./images/technology-785742_1920.jpg");
     background-position: 50%;
+    background-size: 700px;
 }
 .project__container-skills > div:nth-child(3){
     background-image: url("./images/woman-2435605_1920.jpg");
     background-position: 15%;
+    background-size: 800px;
+}
+
+.project__container-skills > div:nth-child(1):hover{
+    background-size: 700px;
+}
+.project__container-skills > div:nth-child(2):hover{
+    background-size: 900px;
+}
+.project__container-skills > div:nth-child(3):hover{
+    background-size: 1000px;
 }
 
 .project__container-skills > div span{ 
@@ -349,8 +374,15 @@ form textarea{
     background-color:#FF0068;
     height: 250px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.footer p{
+    margin-left: 100px;
 }
 
 .footer > img{
@@ -366,6 +398,11 @@ form textarea{
 }
 
 @media screen and (max-width: 1150px) {
+    /* Header section */
+    .hero-banner > p{
+        font-size: 40px;
+        width: 400px;
+    }
     /* Our agency section */
     .our-agency__first-container, .our-agency__second-container{
         flex-direction: column;
@@ -382,7 +419,22 @@ form textarea{
     }
 }
 
+@media screen and (max-width: 900px) {
+    /* Header section */
+    .hero-banner > p{
+        font-size: 40px;
+        width: 300px;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    /* Header section */
+    .hero-banner > p{
+        font-size: 30px;
+        width: 200px;
+        top: 60%;
+        left: 60%;
+    }
     /* Contact section */
     .contact{
         flex-direction: column;
@@ -443,12 +495,19 @@ form textarea{
     .footer{
         height: 150px;
     }
+    .footer > p{
+        margin: 15px;
+    }
     .footer > img{
         width: 200px;
     }
 }
 
 @media screen and (max-width: 450px) {
+    .hero-banner > p{
+        top: 60%;
+        left: 50%;
+    }
     /* Our agency section */
     .our-agency__first-container > img, .our-agency__second-container > img{
         width: 350px;
