@@ -55,14 +55,14 @@ body{
     white-space: nowrap;
     text-transform: uppercase;
     color: #FF0068;
-    animation: bounce 2s ease infinite;
+    animation: bounce 3s ease infinite;
 }
-/*
+
 @keyframes bounce{
-    from {margin-bottom: 70px;}
-    50%  {margin-bottom: 60px;}
-    to   {margin-bottom: 70px;}
-}*/
+    from {opacity: 100%;}
+    50%  {opacity: 0%;}
+    to   {opacity: 100%;}
+}
 
 .header__container-homepage > div:nth-child(1) img{
     margin: 5px;
@@ -101,8 +101,8 @@ body{
     margin: 150px 0;
 }
 
-.our-agency__first-container > img, .our-agency__second-container > img{
-    width: 500px;
+.our-agency__first-container > img, .our-agency__second-container > svg{
+    width: 400px;
 }
 
 .our-agency__first-container > div, .our-agency__second-container > div{
