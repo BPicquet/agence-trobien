@@ -101,8 +101,8 @@ body{
     margin: 150px 0;
 }
 
-.our-agency__first-container > img, .our-agency__second-container > img{
-    width: 500px;
+.our-agency__first-container > img, .our-agency__second-container > svg{
+    width: 400px;
 }
 
 .our-agency__first-container > div, .our-agency__second-container > div{
