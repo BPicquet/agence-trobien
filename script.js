@@ -4,9 +4,17 @@ gsap.to(".form__line", {
     height: 200
 });
 
-gsap.to(".light-svg", {
-    scrollTrigger: ".light-svg",
-    duration: 1, 
+gsap.to(".svg-sauving", {
+    scrollTrigger: ".svg-sauving",
+    duration: 1.5, 
     width: 500
 });
+
+gsap.to(".svg-light", {
+    scrollTrigger: ".svg-light",
+    duration: 1.5, 
+    width: 500
+});
+
+
 
